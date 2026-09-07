@@ -68,6 +68,18 @@ REL-13 results:
 
 Status: **supported structurally by REL-13. Connection pressure is broader than the U(1) example and does not select a physical gauge group.**
 
+### H5j — Gauge-group selection pressure
+REL-14 extends the connection test to positive real rescaling, U(1)/SO(2), SO(3), and GL(2,R). Raw local comparison is representation-dependent, while compensating transport restores covariance to machine precision for every tested family. Composition also holds to machine precision. SO(3) and GL(2,R) exhibit non-trivial commutator structure, whereas R+ and U(1)/SO(2) commute in the tested construction.
+
+REL-14 numerical results:
+
+- R+: raw `5.15e-02`, covariant `3.61e-16`, composition `1.11e-16`;
+- U(1)/SO(2): raw `1.52e-01`, covariant `3.68e-16`, composition `1.86e-16`;
+- SO(3): raw `8.96e-02`, covariant `3.70e-16`, composition `1.61e-16`;
+- GL(2,R): raw `5.05e-02`, covariant `3.66e-16`, composition `1.57e-16`.
+
+Status: **negative selection result. Local covariance and transport composition do not select U(1). The gauge-group choice remains an additional physical constraint.**
+
 ## Important boundary
 
 The current evidence supports a powerful architectural mapping, but does not establish that Ω uniquely generates electromagnetism.
@@ -80,7 +92,7 @@ The main external inputs still include:
 - quantum commutation structure;
 - numerical electromagnetic coupling.
 
-REL-13 sharpens the distinction: the need for a transport/connection rule is generic across tested representation classes, while the choice of physical group remains an independent question.
+REL-13 and REL-14 sharpen the distinction: the need for a transport/connection rule is generic across tested representation classes, while the choice of physical group remains an independent question.
 
 ## Required test discipline
 
@@ -102,3 +114,4 @@ Freeze definitions before comparison. Record failures rather than repairing the 
 - REL-11 — interference/coherence/information: physical layer mapped; dedicated numerical coherence benchmark remains.
 - REL-12 — U(1) external-input audit: completed.
 - REL-13 — representation-agnostic connection pressure: completed at numerical structural level.
+- REL-14 — gauge-group selection pressure: completed; U(1) not selected by minimal covariance/transport requirements.
