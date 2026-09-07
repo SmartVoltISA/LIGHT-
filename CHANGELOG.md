@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-09-07 — LIGHT v0.7
+
+- Added `experiments/REL-12_external_input_audit.md`.
+- Added executable `experiments/REL-12_external_input_audit.py`.
+- REL-12 audits which parts of the light/QED stack are produced by relation-first structure and which remain external inputs.
+- Controlled local-representation test: raw finite differences fail covariance under spatially varying local phase (`~2.36e-2`), while the compensating connection restores covariance to `~2.29e-16`.
+- Independent lattice-curvature cross-check remains invariant to `~1.11e-15`.
+- Conclusion: connection-like structure is strongly motivated by representation-independent local comparison, but the experiment does not derive U(1).
+- Explicit external-input boundary: U(1), spacetime geometry, Maxwell/QED kinetic dynamics, hbar/quantization, bosonic commutators, alpha and matter charge spectrum remain un-derived.
+
 ## 2026-09-07 — LIGHT v0.6
 
 - Added `experiments/REL-05_dispersion_kinematics_test.py`.
