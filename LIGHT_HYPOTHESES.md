@@ -60,42 +60,31 @@ Status: **supported analytically/numerically; full FDTD boundary/diffraction tes
 ### H5i — Representation-agnostic connection pressure
 A nontrivial position-dependent local representation destroys naive nearest-neighbour comparison for positive real rescaling, complex phase, and SO(2) rotation. In all three cases, a compensating local transport map restores covariance to machine precision.
 
-REL-13 results:
-
-- positive real scaling: raw `2.825116e-02`, covariant `2.706169e-16`;
-- complex phase: raw `2.362070e-02`, covariant `3.236829e-16`;
-- SO(2) rotation: raw `3.528319e-02`, covariant `3.608225e-16`.
-
 Status: **supported structurally by REL-13. Connection pressure is broader than the U(1) example and does not select a physical gauge group.**
 
 ### H5j — Gauge-group selection pressure
-REL-14 extends the connection test to positive real rescaling, U(1)/SO(2), SO(3), and GL(2,R). Raw local comparison is representation-dependent, while compensating transport restores covariance to machine precision for every tested family. Composition also holds to machine precision. SO(3) and GL(2,R) exhibit non-trivial commutator structure, whereas R+ and U(1)/SO(2) commute in the tested construction.
-
-REL-14 numerical results:
-
-- R+: raw `5.15e-02`, covariant `3.61e-16`, composition `1.11e-16`;
-- U(1)/SO(2): raw `1.52e-01`, covariant `3.68e-16`, composition `1.86e-16`;
-- SO(3): raw `8.96e-02`, covariant `3.70e-16`, composition `1.61e-16`;
-- GL(2,R): raw `5.05e-02`, covariant `3.66e-16`, composition `1.57e-16`.
+REL-14 extends the connection test to positive real rescaling, U(1)/SO(2), SO(3), and GL(2,R). Raw local comparison is representation-dependent, while compensating transport restores covariance to machine precision for every tested family. Composition also holds to machine precision.
 
 Status: **negative selection result. Local covariance and transport composition do not select U(1). The gauge-group choice remains an additional physical constraint.**
 
 ### H5k — Memory/inertia/action relation
 REL-15 tests whether generic memory alone is sufficient to generate inertia/mass. A memoryless first-order response has no post-impulse persistence, while a second-order retained dynamical state produces persistent velocity with `Δv=J/m`. The free-particle action `L=1/2 m v²` gives `p=mv` and constant momentum.
 
-REL-15 results:
-
-- memoryless post-impulse velocity: `0`;
-- inertial response for `J=1, m=2`: `Δv=0.5`;
-- impulse relative error: `<1e-12`;
-- mass-scaling relative error: `<1e-12`;
-- free-particle momentum spread: `<1e-12`.
-
 Status: **structural support with an important negative boundary. Retained dynamical state can represent inertia, but arbitrary memory does not imply mass. The coefficient `m` remains an input of the tested action; its physical origin is not derived.**
+
+### H5l — Value/path selection
+REL-16 separates admissibility, value and physical action. Memory-like constraints reduce the path space; an abstract value functional can order admissible paths, but tied paths can remain and no physical action or mass parameter follows automatically.
+
+Status: **structural support with a negative boundary. VALUE can participate in CHOICE, but VALUE alone does not derive physical action or its parameters.**
+
+### H5m — Path/dynamics separation
+REL-17 tests two trajectories with identical endpoints. An endpoint-only value function assigns them equal value, while a supplied local mechanical action distinguishes them. This demonstrates that physical path selection requires additional path-dependent structure beyond endpoint preference.
+
+Status: **negative boundary confirmed. Generic VALUE does not determine physical dynamics; a physical variational law requires additional structure and a specified stationarity/selection condition.**
 
 ## Important boundary
 
-The current evidence supports a powerful architectural mapping, but does not establish that Ω uniquely generates electromagnetism or mass.
+The current evidence supports a powerful architectural mapping, but does not establish that Ω uniquely generates electromagnetism, mass, or physical dynamics.
 
 The main external inputs still include:
 
@@ -104,9 +93,10 @@ The main external inputs still include:
 - Maxwell/QED kinetic dynamics;
 - quantum commutation structure;
 - numerical electromagnetic coupling;
-- physical mass-generation mechanism.
+- physical mass-generation mechanism;
+- physical action/variational structure.
 
-REL-13 and REL-14 sharpen the distinction: the need for a transport/connection rule is generic across tested representation classes, while the choice of physical group remains an independent question. REL-15 similarly separates generic memory from the specific retained dynamical structure that produces inertia in mechanics.
+REL-13 and REL-14 show that connection pressure is broader than U(1), while gauge-group choice remains independent. REL-15 separates generic memory from inertial state and mass. REL-16 and REL-17 now separate abstract VALUE/CHOICE from the additional path-dependent structure required for physical dynamics.
 
 ## Required test discipline
 
@@ -130,3 +120,5 @@ Freeze definitions before comparison. Record failures rather than repairing the 
 - REL-13 — representation-agnostic connection pressure: completed at numerical structural level.
 - REL-14 — gauge-group selection pressure: completed; U(1) not selected by minimal covariance/transport requirements.
 - REL-15 — memory/inertia/action: completed; inertia requires retained dynamical state, generic memory does not derive mass.
+- REL-16 — value/path selection: completed; value orders admissible paths but does not derive physical action.
+- REL-17 — path/dynamics separation: completed; endpoint value does not determine physical trajectory.
