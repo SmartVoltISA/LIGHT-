@@ -3,70 +3,81 @@
 ## H1 — Relation-first structure
 Hypothesis: electromagnetic behavior can be represented by a minimal architecture in which relations between local states are primary and field values are state variables.
 
+Status: **supported as a broad structural representation, not established as fundamental ontology**.
+
 Falsification: if the mapping requires arbitrary domain-specific additions that destroy the same core relation rules, H1 is rejected as universal.
 
 ## H2 — Difference generates observable field strength
 Hypothesis: the useful physical role of F_muν is structurally analogous to a local difference/curvature operator.
 
-Status: mathematical analogy is valid; universality is untested.
+Status: **supported as mathematical structural correspondence; universality unproven**.
 
 ## H3 — Photon as excitation, not primitive object
 Hypothesis: the most economical architecture treats the photon as a quantized mode/state of an electromagnetic field rather than as an independent primitive object.
 
-Status: consistent with QFT; not a new prediction.
+Status: **consistent with QFT; not an Ω prediction**.
 
 ## H4 — Propagation as constrained relation
-Hypothesis: propagation can be represented as evolution constrained by the field equations and spacetime causal structure.
+Hypothesis: propagation can be represented as evolution constrained by field equations and spacetime causal structure.
 
-Status: consistent with classical and quantum field theory; REL-01 and REL-02 give numerical tests of the narrower propagation layer.
+Status: **supported at the tested numerical layer**.
 
 ## H5 — Universal architecture
 Hypothesis: the same abstract structure can describe at least two unrelated physical systems without changing its core definitions.
 
-This is the first genuinely risky Ω hypothesis.
+This remains the principal risky Ω hypothesis.
 
-### H5a — Propagation-layer universality
-The frozen nearest-neighbour relation operator
-
-`L q_i = q_{i+1} - 2 q_i + q_{i-1}`
-
-with second-order dynamics reproduces the same propagation mathematics in a LIGHT-layer scalar field interpretation and an independent mass-spring interpretation.
-
-Status: **supported at the tested numerical layer by REL-01**.
+### H5a — Propagation layer
+Status: **supported at tested numerical layer by REL-01**.
 
 ### H5b — Full electromagnetic universality
-The same minimal relation architecture reproduces the defining structure of electromagnetism, including gauge structure, vector/tensor field content, polarization, charge coupling and quantum excitation.
+Same minimal architecture reproduces gauge structure, vector/tensor field content, polarization, charge coupling and quantum excitation.
 
-Status: **not demonstrated**. REL-01 and REL-02 do not support this stronger claim.
+Status: **not demonstrated**.
 
 ### H5c — Vector + energy layer
-A relation-first architecture can retain transverse vector field structure and reproduce vacuum-wave propagation together with quantitative electromagnetic energy balance without adding a separate ad-hoc energy mechanism.
-
-Status: **supported at the tested numerical layer by REL-02E**. The result is computational and supportive, not a derivation of electromagnetism from relations.
+Status: **supported at tested numerical layer by REL-02E**. Not a derivation of electromagnetism.
 
 ### H5d — Gauge/connection compatibility
-A relation-first architecture can represent local state conventions, a U(1) link connection, covariant local comparison, accumulated curvature, and gauge-invariant energy without changing the relation-first ordering.
+Status: **supported at tested discrete U(1) layer by REL-03**. U(1) remains an external input.
 
-Status: **supported at the tested discrete U(1) layer by REL-03**. This is compatibility evidence, not a derivation of U(1) from Ω.
+### H5e — Dispersion/kinematic compatibility
+The relation architecture reproduces the massless continuum target `omega=c|k|` and is compatible with `E=hbar omega`, `p=hbar k`, `E=pc` when the standard quantum relations are supplied.
+
+Status: **supported at the tested mathematical/numerical layer; quantum relation is input, not derived**.
+
+### H5f — Polarization/interaction/boundary compatibility
+Transverse polarization, boundary matching, matter coupling, interference and coherence fit the same hierarchy of local states, relations, constraints and transitions.
+
+Status: **structural compatibility; several quantitative full-stack tests remain open**.
 
 ## Important boundary
 
-REL-03 exposes the next hard question. The U(1) group is currently an input inherited from established QED, not derived by Ω. Therefore the result must not be described as deriving electromagnetism from relations.
+The current evidence supports a powerful architectural mapping, but does not establish that Ω uniquely generates electromagnetism.
 
-The remaining risky question is whether the abstract pattern
+The main external inputs still include:
 
-`local state → transformation law → connection → accumulated relation → invariant`
-
-can be selected from the same frozen Ω architecture without inserting the electromagnetic group by hand.
+- electromagnetic gauge group U(1);
+- spacetime dimension and metric signature;
+- Maxwell/QED kinetic dynamics;
+- quantum commutation structure;
+- the numerical electromagnetic coupling.
 
 ## Required test discipline
 
-Apply the same schema to LIGHT and independent systems. Freeze definitions before comparing results. Record failures rather than repairing the model after seeing the result. Distinguish compatibility tests from derivations.
+Freeze definitions before comparison. Record failures rather than repairing the model after seeing results. Distinguish compatibility from derivation. Keep physical sources and numerical tests attached to every property.
 
 ## Current experimental chain
 
-- REL-01 — scalar relation operator / propagation: completed.
-- REL-01E — scalar relation + energy balance: completed.
-- REL-02E — vector Maxwell relation + energy balance: completed at the tested numerical layer.
-- REL-03 — discrete U(1) gauge/connection invariance: completed at the tested numerical layer.
-- REL-04 — test whether the transformation/connection/invariant pattern can be derived without importing U(1): next.
+- REL-01 — scalar relation propagation: completed.
+- REL-01E — scalar relation energy: completed.
+- REL-02E — vector Maxwell + energy: completed.
+- REL-03 — discrete U(1) gauge/connection invariance: completed.
+- REL-04 — connection pressure without importing U(1): structural support.
+- REL-05 — dispersion/kinematics: completed at numerical continuum-compatibility level.
+- REL-06 — polarization/helicity: physical structure mapped; full 3D numerical test remains.
+- REL-07 — stress-energy: physical layer mapped; full 3D numerical test remains.
+- REL-08 — boundaries: Fresnel conservation check completed analytically; full FDTD interface test remains.
+- REL-09 — matter interaction: physical/QED layer mapped; quantitative transition test remains.
+- REL-10 — quantum modes: standard QFT structure mapped; Ω quantization not derived.
+- REL-11 — interference/coherence/information: physical layer mapped; dedicated numerical coherence benchmark remains.
