@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-09-07 — LIGHT v0.9
+
+- Added `experiments/REL-14_group_selection_pressure.py`.
+- Added `experiments/REL-14_group_selection_pressure.md`.
+- REL-14 compares representation/transport structures for R+, U(1)/SO(2), SO(3), and GL(2,R) without selecting U(1) as the target.
+- Raw local comparison is representation-dependent across all tested families.
+- Compensating transport restores covariance to machine precision for all tested families.
+- Transport composition also closes to machine precision.
+- SO(3) and GL(2,R) expose non-trivial commutator structure, while R+ and U(1)/SO(2) commute in the tested construction.
+- Result: minimal local covariance + transport requirements do not select U(1). This is recorded as an explicit negative selection result.
+
 ## 2026-09-07 — LIGHT v0.8
 
 - Added `experiments/REL-13_representation_agnostic_connection_test.py`.
