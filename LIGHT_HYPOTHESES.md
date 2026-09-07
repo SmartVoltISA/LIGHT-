@@ -8,7 +8,7 @@ Status: **supported as a broad structural representation, not established as fun
 Falsification: if the mapping requires arbitrary domain-specific additions that destroy the same core relation rules, H1 is rejected as universal.
 
 ## H2 — Difference generates observable field strength
-Hypothesis: the useful physical role of F_muν is structurally analogous to a local difference/curvature operator.
+Hypothesis: the useful physical role of `F_muν` is structurally analogous to a local difference/curvature operator.
 
 Status: **supported as mathematical structural correspondence; universality unproven**.
 
@@ -42,14 +42,24 @@ Status: **supported at tested numerical layer by REL-02E**. Not a derivation of 
 Status: **supported at tested discrete U(1) layer by REL-03**. U(1) remains an external input.
 
 ### H5e — Dispersion/kinematic compatibility
-The relation architecture reproduces the massless continuum target `omega=c|k|` and is compatible with `E=hbar omega`, `p=hbar k`, `E=pc` when the standard quantum relations are supplied.
+The relation architecture reproduces the massless continuum target `ω=c|k|` in the long-wavelength limit and is compatible with `E=ħω`, `p=ħk`, `E=pc` when the standard quantum relations are supplied. The tested finite-difference scheme shows the expected lattice dispersion away from the continuum limit.
 
 Status: **supported at the tested mathematical/numerical layer; quantum relation is input, not derived**.
 
-### H5f — Polarization/interaction/boundary compatibility
-Transverse polarization, boundary matching, matter coupling, interference and coherence fit the same hierarchy of local states, relations, constraints and transitions.
+### H5f — Polarization/helicity compatibility
+Two independent transverse components generate linear, elliptic and circular polarization; the tested circular states have normalized handedness `+1` and `−1`.
 
-Status: **structural compatibility; several quantitative full-stack tests remain open**.
+Status: **supported structurally; exact quantum helicity representation remains externally supplied**.
+
+### H5g — Energy-momentum compatibility
+For a vacuum plane wave, numerical evaluation of CODATA constants gives `S/(uc)=0.999999999999403` and `g/(u/c)=0.999999999999403`.
+
+Status: **supported numerically for the tested plane-wave layer; full stress-tensor conservation remains open**.
+
+### H5h — Boundary compatibility
+Fresnel boundary tests preserve `R+T=1` for ideal lossless interfaces and fit the boundary-constraint layer.
+
+Status: **supported analytically/numerically; full FDTD boundary/diffraction test remains open**.
 
 ## Important boundary
 
@@ -75,9 +85,9 @@ Freeze definitions before comparison. Record failures rather than repairing the 
 - REL-03 — discrete U(1) gauge/connection invariance: completed.
 - REL-04 — connection pressure without importing U(1): structural support.
 - REL-05 — dispersion/kinematics: completed at numerical continuum-compatibility level.
-- REL-06 — polarization/helicity: physical structure mapped; full 3D numerical test remains.
-- REL-07 — stress-energy: physical layer mapped; full 3D numerical test remains.
-- REL-08 — boundaries: Fresnel conservation check completed analytically; full FDTD interface test remains.
+- REL-06 — polarization/helicity: structural numerical test completed; full 3D Lorentz/helicity test remains.
+- REL-07 — stress-energy: plane-wave energy/momentum consistency completed; full 3D stress-tensor conservation remains.
+- REL-08 — boundaries: Fresnel conservation test completed; full FDTD interface/diffraction remains.
 - REL-09 — matter interaction: physical/QED layer mapped; quantitative transition test remains.
 - REL-10 — quantum modes: standard QFT structure mapped; Ω quantization not derived.
 - REL-11 — interference/coherence/information: physical layer mapped; dedicated numerical coherence benchmark remains.
