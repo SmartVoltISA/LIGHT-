@@ -1,10 +1,19 @@
 # CHANGELOG
 
+## 2026-09-07 — LIGHT v0.8
+
+- Added `experiments/REL-13_representation_agnostic_connection_test.py`.
+- Added `experiments/REL-13_representation_agnostic_connection_test.md`.
+- REL-13 tests local positive-real rescaling, complex phase, and SO(2) rotation without selecting one physical gauge group as the target.
+- Raw nearest-neighbour comparison fails covariance for all three representation families.
+- A local transport/connection constructed from neighboring representation maps restores covariance to machine precision.
+- Result: connection pressure is representation-agnostic across the tested families; this does not select U(1), SO(2), or any physical gauge group.
+
 ## 2026-09-07 — LIGHT v0.7
 
 - Added `experiments/REL-12_external_input_audit.md`.
 - Added executable `experiments/REL-12_external_input_audit.py`.
-- REL-12 audits which parts of the light/QED stack are produced by relation-first structure and which remain external inputs.
+- REL-12 audited which parts of the light/QED stack are produced by relation-first structure and which remain external inputs.
 - Controlled local-representation test: raw finite differences fail covariance under spatially varying local phase (`~2.36e-2`), while the compensating connection restores covariance to `~2.29e-16`.
 - Independent lattice-curvature cross-check remains invariant to `~1.11e-15`.
 - Conclusion: connection-like structure is strongly motivated by representation-independent local comparison, but the experiment does not derive U(1).
@@ -26,31 +35,24 @@
 
 ## 2026-09-07 — LIGHT v0.5
 
-- Added `LIGHT_PROPERTIES.md`: full physical-property inventory and relation-first mapping.
-- Added `FULL_LIGHT_RUN.md`: complete pass over kinematics, fields, energy, momentum, polarization, causality, interaction, boundaries, quantum structure, interference and information.
+- Added `LIGHT_PROPERTIES.md` and `FULL_LIGHT_RUN.md`.
+- Completed the physical-property inventory and relation-first mapping.
 - Added the planned REL-05–REL-11 analysis layer.
 - Fixed the scientific boundary: architectural compatibility is not derivation.
 
 ## 2026-09-07 — LIGHT v0.4
 
-- Added `experiments/REL-03_gauge_relation_test.py`: discrete U(1) gauge/connection test.
-- Added `experiments/REL-03.md`: connection, covariant relation, curvature and gauge-invariant energy.
-- Recorded H5d: relation-first architecture is compatible with a discrete U(1) gauge/connection layer at the tested numerical level.
+- Added the discrete U(1) gauge/connection test and recorded H5d.
 - Fixed the boundary: U(1) remains an input from established QED, not an Ω derivation.
 
 ## 2026-09-07 — LIGHT v0.3
 
-- Added `ENERGY_RELATION.md` and the REL-01E / REL-02E energy tests.
-- Recorded H5c: vector structure, propagation and energy balance survive at the tested numerical layer.
-- Kept gauge/connection, sources, full 3D structure and quantum layer as separate tests.
+- Added energy relation tests and recorded H5c.
 
 ## 2026-09-07 — LIGHT v0.2
 
 - Added QFT_CORE, GAUGE_STRUCTURE, LAGRANGIAN, MINIMAL_STRUCTURE, DERIVATION_CHAIN and LIGHT_HYPOTHESES.
-- Fixed distinction between mathematical relation/analogy and physical fact.
 
 ## 2026-09-07 — LIGHT v0.1
 
 - Created the fundamental LIGHT research framework.
-- Fixed FIELD, PHOTON, PROPAGATION, INTERACTION, GEOMETRY and Ω_MAPPING.
-- Added experimental plan and fact/model/hypothesis separation.
