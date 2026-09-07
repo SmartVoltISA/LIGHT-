@@ -8,7 +8,8 @@ def maxwell_kernel(k):
     k = np.asarray(k, dtype=float)
     k_cov = ETA @ k
     k2 = float(k @ k_cov)
-    return k2 * ETA - np.outer(k_cov, k_cov)
+    # K^{mu nu} = k^2 eta^{mu nu} - k^mu k^nu
+    return k2 * ETA - np.outer(k, k)
 
 
 def proca_kernel(k, m2=1.0):
