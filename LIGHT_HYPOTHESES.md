@@ -87,6 +87,11 @@ REL-18 tests a local path functional `S[x]=∫L(x,xdot,t)dt` with stationary sel
 
 Status: **sufficiency result with a negative derivation boundary. Local path functional + stationarity is sufficient to generate local dynamics in the tested class; time-translation symmetry supplies the conserved energy-like quantity. The physical Lagrangian form, mass parameter, time parameter, and stationary-action principle are not derived from Ω primitives.**
 
+### H5o — Symmetry constrains functional form
+REL-19 tests whether additional Newtonian/Galilean structure can constrain the free-particle functional without inserting the quadratic kinetic term. Locality plus spatial/temporal homogeneity gives `L=f(v²)`; isotropy gives dependence only on `v²`; Galilean covariance up to a total derivative then forces `f'(v²)` to be constant, hence `L=(m/2)v²+C`.
+
+Status: **form-selection result inside Newtonian/Galilean mechanics. The quadratic velocity form is constrained, but `m` remains a free coefficient and the Galilean framework itself is not derived from Ω.**
+
 ## Important boundary
 
 The current evidence supports a powerful architectural mapping, but does not establish that Ω uniquely generates electromagnetism, mass, or physical dynamics.
@@ -99,9 +104,10 @@ The main external inputs still include:
 - quantum commutation structure;
 - numerical electromagnetic coupling;
 - physical mass-generation mechanism;
-- physical action/variational structure.
+- physical action/variational structure;
+- Newtonian/Galilean symmetry when interpreting REL-19.
 
-REL-13 and REL-14 show that connection pressure is broader than U(1), while gauge-group choice remains independent. REL-15 separates generic memory from inertial state and mass. REL-16 and REL-17 separate abstract VALUE/CHOICE from the additional path-dependent structure required for physical dynamics. REL-18 further separates the local variational layer from time-translation symmetry and conservation.
+REL-13 and REL-14 show that connection pressure is broader than U(1), while gauge-group choice remains independent. REL-15 separates generic memory from inertial state and mass. REL-16 and REL-17 separate abstract VALUE/CHOICE from the additional path-dependent structure required for physical dynamics. REL-18 further separates the local variational layer from time-translation symmetry and conservation. REL-19 shows that symmetry can constrain a functional form once a Newtonian/Galilean kinematic framework is supplied.
 
 ## Required test discipline
 
@@ -128,3 +134,4 @@ Freeze definitions before comparison. Record failures rather than repairing the 
 - REL-16 — value/path selection: completed; value orders admissible paths but does not derive physical action.
 - REL-17 — path/dynamics separation: completed; endpoint value does not determine physical trajectory.
 - REL-18 — minimum structure for dynamics: completed; local variational structure yields dynamics in the tested class, while time-translation symmetry yields energy conservation.
+- REL-19 — free-particle symmetry constraint: completed; Newtonian/Galilean symmetries constrain the quadratic velocity form, while the mass coefficient remains free.
