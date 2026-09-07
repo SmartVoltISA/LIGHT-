@@ -5,8 +5,6 @@ Hypothesis: electromagnetic behavior can be represented by a minimal architectur
 
 Status: **supported as a broad structural representation, not established as fundamental ontology**.
 
-Falsification: if the mapping requires arbitrary domain-specific additions that destroy the same core relation rules, H1 is rejected as universal.
-
 ## H2 — Difference generates observable field strength
 Hypothesis: the useful physical role of `F_muν` is structurally analogous to a local difference/curvature operator.
 
@@ -31,8 +29,6 @@ This remains the principal risky Ω hypothesis.
 Status: **supported at tested numerical layer by REL-01**.
 
 ### H5b — Full electromagnetic universality
-Same minimal architecture reproduces gauge structure, vector/tensor field content, polarization, charge coupling and quantum excitation.
-
 Status: **not demonstrated**.
 
 ### H5c — Vector + energy layer
@@ -42,7 +38,7 @@ Status: **supported at tested numerical layer by REL-02E**. Not a derivation of 
 Status: **supported at tested discrete U(1) layer by REL-03**. U(1) remains an external input.
 
 ### H5e — Dispersion/kinematic compatibility
-The relation architecture reproduces the massless continuum target `ω=c|k|` in the long-wavelength limit and is compatible with `E=ħω`, `p=ħk`, `E=pc` when the standard quantum relations are supplied. The tested finite-difference scheme shows the expected lattice dispersion away from the continuum limit.
+The relation architecture reproduces the massless continuum target `ω=c|k|` in the long-wavelength limit and is compatible with `E=ħω`, `p=ħk`, `E=pc` when the standard quantum relations are supplied.
 
 Status: **supported at the tested mathematical/numerical layer; quantum relation is input, not derived**.
 
@@ -61,6 +57,17 @@ Fresnel boundary tests preserve `R+T=1` for ideal lossless interfaces and fit th
 
 Status: **supported analytically/numerically; full FDTD boundary/diffraction test remains open**.
 
+### H5i — Representation-agnostic connection pressure
+A nontrivial position-dependent local representation destroys naive nearest-neighbour comparison for positive real rescaling, complex phase, and SO(2) rotation. In all three cases, a compensating local transport map restores covariance to machine precision.
+
+REL-13 results:
+
+- positive real scaling: raw `2.825116e-02`, covariant `2.706169e-16`;
+- complex phase: raw `2.362070e-02`, covariant `3.236829e-16`;
+- SO(2) rotation: raw `3.528319e-02`, covariant `3.608225e-16`.
+
+Status: **supported structurally by REL-13. Connection pressure is broader than the U(1) example and does not select a physical gauge group.**
+
 ## Important boundary
 
 The current evidence supports a powerful architectural mapping, but does not establish that Ω uniquely generates electromagnetism.
@@ -71,7 +78,9 @@ The main external inputs still include:
 - spacetime dimension and metric signature;
 - Maxwell/QED kinetic dynamics;
 - quantum commutation structure;
-- the numerical electromagnetic coupling.
+- numerical electromagnetic coupling.
+
+REL-13 sharpens the distinction: the need for a transport/connection rule is generic across tested representation classes, while the choice of physical group remains an independent question.
 
 ## Required test discipline
 
@@ -91,3 +100,5 @@ Freeze definitions before comparison. Record failures rather than repairing the 
 - REL-09 — matter interaction: physical/QED layer mapped; quantitative transition test remains.
 - REL-10 — quantum modes: standard QFT structure mapped; Ω quantization not derived.
 - REL-11 — interference/coherence/information: physical layer mapped; dedicated numerical coherence benchmark remains.
+- REL-12 — U(1) external-input audit: completed.
+- REL-13 — representation-agnostic connection pressure: completed at numerical structural level.
