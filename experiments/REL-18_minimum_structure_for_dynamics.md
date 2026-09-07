@@ -56,7 +56,7 @@ Then:
 
 while explicit time dependence removes that conservation, with the precise balance law above.
 
-This is consistent with the standard Noether framework: continuous symmetries of a Lagrangian are associated with conserved quantities/currents. citeturn0search2turn0search3
+This is consistent with the standard Noether framework: continuous symmetries of a Lagrangian are associated with conserved quantities/currents.
 
 ## Important negative boundary
 
