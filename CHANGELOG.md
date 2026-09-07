@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 2026-09-07 — LIGHT v1.0
+
+- Added `experiments/REL-15_memory_inertia_action_test.py`.
+- Added `experiments/REL-15_memory_inertia_action_test.md`.
+- REL-15 tests the proposed chain from retained history/memory to inertia and action.
+- A memoryless first-order response has no post-impulse persistence.
+- A second-order retained dynamical state produces inertial persistence with `Δv=J/m`.
+- The free-particle action `L=1/2 m v²` gives `p=mv` and constant momentum.
+- Result: retained dynamical state supports an inertia mapping, but generic memory does not derive mass.
+- Important boundary: the coefficient `m` remains an input of the tested mechanical action; physical mass generation is not derived.
+- Updated `LIGHT_HYPOTHESES.md` with H5k.
+
 ## 2026-09-07 — LIGHT v0.9
 
 - Added `experiments/REL-14_group_selection_pressure.py`.
