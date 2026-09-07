@@ -1,53 +1,46 @@
 # CHANGELOG
 
+## 2026-09-07 — LIGHT v0.6
+
+- Added `experiments/REL-05_dispersion_kinematics_test.py`.
+- Added `experiments/REL-06_polarization_helicity_test.py`.
+- Added `experiments/REL-07_energy_momentum_test.py`.
+- Added `experiments/REL-08_boundary_fresnel_test.py`.
+- Extended `FULL_LIGHT_RUN.md` with quantitative REL-05 to REL-08 results.
+- Updated `LIGHT_HYPOTHESES.md` with H5e–H5h.
+- REL-05: long-wavelength phase speed approaches `c`; high-k lattice dispersion is explicitly separated from physical photon dispersion.
+- REL-06: tested transverse polarization states produce normalized circular handedness `+1/-1`.
+- REL-07: plane-wave energy flux and momentum density agree with `S=uc` and `g=u/c` to approximately `6e-13` relative error using frozen CODATA constants.
+- REL-08: ideal lossless Fresnel cases preserve `R+T=1`.
+- Strict boundary preserved: these tests do not derive U(1), `hbar`, quantization, `alpha`, or spacetime geometry.
+
 ## 2026-09-07 — LIGHT v0.5
 
-- Добавлен `LIGHT_PROPERTIES.md`: полная карта физических свойств света/электромагнитного излучения и их relation-first mapping.
-- Добавлен `FULL_LIGHT_RUN.md`: полный проход по кинематике, полям, энергии, импульсу, поляризации, причинности, взаимодействию, границам, квантованию, интерференции и информации.
-- Добавлен `experiments/REL-05_dispersion_energy_momentum.py`: дисперсионный тест `omega(k)` и связь с безмассовой кинематикой.
-- Добавлен `experiments/REL-06_polarization_helicity.md`: поперечность, поляризация и helicity.
-- Добавлен `experiments/REL-07_stress_energy.md`: энергия, импульс и Maxwell stress layer.
-- Добавлен `experiments/REL-08_boundaries.md`: reflection/refraction/diffraction boundary layer.
-- Добавлен `experiments/REL-09_matter_interaction.md`: coupling, absorption, emission and scattering.
-- Добавлен `experiments/REL-10_quantum_modes.md`: quantum modes, occupation and photon layer.
-- Добавлен `experiments/REL-11_interference_coherence_information.md`: interference, coherence and information layer.
-- REL-05 подтверждён численно на длинных волнах; дискретизационная дисперсия появляется у Nyquist и не должна интерпретироваться как физическое свойство фотона.
-- Добавлена строгая граница: часть слоёв пока архитектурно совместима, но не выведена из Ω аксиом.
+- Added `LIGHT_PROPERTIES.md`: full physical-property inventory and relation-first mapping.
+- Added `FULL_LIGHT_RUN.md`: complete pass over kinematics, fields, energy, momentum, polarization, causality, interaction, boundaries, quantum structure, interference and information.
+- Added the planned REL-05–REL-11 analysis layer.
+- Fixed the scientific boundary: architectural compatibility is not derivation.
 
 ## 2026-09-07 — LIGHT v0.4
 
-- Добавлен `experiments/REL-03_gauge_relation_test.py`: дискретный U(1) gauge/connection тест.
-- Добавлен `experiments/REL-03.md`: зафиксированы connection, covariant relation, curvature и gauge-invariant energy.
-- Зафиксировано H5d: relation-first архитектура совместима с дискретным U(1) gauge/connection слоем на проверенном численном уровне.
-- Зафиксирована строгая граница: U(1) пока является входом из установленной QED, а не результатом вывода Ω.
-- Следующий риск: проверить, можно ли получить общий паттерн `state → transformation → connection → accumulated relation → invariant` без ручного ввода электромагнитной U(1).
+- Added `experiments/REL-03_gauge_relation_test.py`: discrete U(1) gauge/connection test.
+- Added `experiments/REL-03.md`: connection, covariant relation, curvature and gauge-invariant energy.
+- Recorded H5d: relation-first architecture is compatible with a discrete U(1) gauge/connection layer at the tested numerical level.
+- Fixed the boundary: U(1) remains an input from established QED, not an Ω derivation.
 
 ## 2026-09-07 — LIGHT v0.3
 
-- Добавлен `ENERGY_RELATION.md`: энергия включена в relation-first проверку как отдельный количественный критерий.
-- Добавлен `experiments/REL-01E_energy_test.py`: скалярная relation-модель + энергетический баланс.
-- Добавлен `experiments/REL-01E.md`: зафиксирован результат REL-01E.
-- Добавлен `experiments/REL-02E_maxwell_energy_test.py`: минимальная 1D поперечная Maxwell-модель с векторной структурой и энергией.
-- Добавлен `experiments/REL-02E.md`: результаты REL-02E и границы интерпретации.
-- Зафиксировано H5c: relation-first архитектура сохраняет векторную структуру, распространение и количественный энергетический баланс на проверенном численном уровне.
-- Зафиксировано ограничение: REL-02E не является выводом всей электродинамики из абстрактных отношений; gauge/connection, источники, полная 3D-структура и квантовый слой остаются отдельными проверками.
+- Added `ENERGY_RELATION.md` and the REL-01E / REL-02E energy tests.
+- Recorded H5c: vector structure, propagation and energy balance survive at the tested numerical layer.
+- Kept gauge/connection, sources, full 3D structure and quantum layer as separate tests.
 
 ## 2026-09-07 — LIGHT v0.2
 
-- Добавлен QFT_CORE: поле → квантование → фотон.
-- Добавлен GAUGE_STRUCTURE: локальная U(1), A_mu, D_mu и F_muν.
-- Добавлен LAGRANGIAN: Maxwell/QED и структурная декомпозиция.
-- Добавлен MINIMAL_STRUCTURE: поиск минимального структурного скелета.
-- Добавлен DERIVATION_CHAIN: последовательность от симметрии к фотону и наблюдению.
-- Добавлен LIGHT_HYPOTHESES: гипотезы и критерии фальсификации.
-- Зафиксировано ключевое различие: математическая связь/аналогия не считается физическим фактом без отдельной проверки.
+- Added QFT_CORE, GAUGE_STRUCTURE, LAGRANGIAN, MINIMAL_STRUCTURE, DERIVATION_CHAIN and LIGHT_HYPOTHESES.
+- Fixed distinction between mathematical relation/analogy and physical fact.
 
 ## 2026-09-07 — LIGHT v0.1
 
-- Создан фундаментальный каркас исследования света.
-- Зафиксированы FIELD, PHOTON, PROPAGATION, INTERACTION, GEOMETRY.
-- Добавлен слой Ω_MAPPING с запретом выдавать аналогии за физические факты.
-- Добавлен экспериментальный план E0–E5.
-- Зафиксировано правило разделения факта, модели, гипотезы и теста.
-
-Следующий этап: полный проход по физическим свойствам света и их relation-first проверке.
+- Created the fundamental LIGHT research framework.
+- Fixed FIELD, PHOTON, PROPAGATION, INTERACTION, GEOMETRY and Ω_MAPPING.
+- Added experimental plan and fact/model/hypothesis separation.
