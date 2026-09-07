@@ -18,7 +18,7 @@ Status: consistent with QFT; not a new prediction.
 ## H4 — Propagation as constrained relation
 Hypothesis: propagation can be represented as evolution constrained by the field equations and spacetime causal structure.
 
-Status: consistent with classical and quantum field theory; REL-01 gives a numerical test of the narrower propagation layer.
+Status: consistent with classical and quantum field theory; REL-01 and REL-02 give numerical tests of the narrower propagation layer.
 
 ## H5 — Universal architecture
 Hypothesis: the same abstract structure can describe at least two unrelated physical systems without changing its core definitions.
@@ -37,7 +37,12 @@ Status: **supported at the tested numerical layer by REL-01**.
 ### H5b — Full electromagnetic universality
 The same minimal relation architecture reproduces the defining structure of electromagnetism, including gauge structure, vector/tensor field content, polarization, charge coupling and quantum excitation.
 
-Status: **not demonstrated**. REL-01 explicitly does not support this stronger claim.
+Status: **not demonstrated**. REL-01 and REL-02 do not support this stronger claim.
+
+### H5c — Vector + energy layer
+A relation-first architecture can retain transverse vector field structure and reproduce vacuum-wave propagation together with quantitative electromagnetic energy balance without adding a separate ad-hoc energy mechanism.
+
+Status: **supported at the tested numerical layer by REL-02E**. The result is computational and supportive, not a derivation of electromagnetism from relations.
 
 ## Required test discipline
 
@@ -46,5 +51,6 @@ Apply the same schema to LIGHT and independent systems. Freeze definitions befor
 ## Current experimental chain
 
 - REL-01 — scalar relation operator / propagation: completed.
-- REL-02 — vector relation structure and electromagnetic constraints: next.
-- REL-03 — gauge/connection layer: later, only after REL-02 is frozen.
+- REL-01E — scalar relation + energy balance: completed.
+- REL-02E — vector Maxwell relation + energy balance: completed at the tested numerical layer.
+- REL-03 — gauge/connection layer: next.
