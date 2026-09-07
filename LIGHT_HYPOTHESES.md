@@ -80,9 +80,22 @@ REL-14 numerical results:
 
 Status: **negative selection result. Local covariance and transport composition do not select U(1). The gauge-group choice remains an additional physical constraint.**
 
+### H5k — Memory/inertia/action relation
+REL-15 tests whether generic memory alone is sufficient to generate inertia/mass. A memoryless first-order response has no post-impulse persistence, while a second-order retained dynamical state produces persistent velocity with `Δv=J/m`. The free-particle action `L=1/2 m v²` gives `p=mv` and constant momentum.
+
+REL-15 results:
+
+- memoryless post-impulse velocity: `0`;
+- inertial response for `J=1, m=2`: `Δv=0.5`;
+- impulse relative error: `<1e-12`;
+- mass-scaling relative error: `<1e-12`;
+- free-particle momentum spread: `<1e-12`.
+
+Status: **structural support with an important negative boundary. Retained dynamical state can represent inertia, but arbitrary memory does not imply mass. The coefficient `m` remains an input of the tested action; its physical origin is not derived.**
+
 ## Important boundary
 
-The current evidence supports a powerful architectural mapping, but does not establish that Ω uniquely generates electromagnetism.
+The current evidence supports a powerful architectural mapping, but does not establish that Ω uniquely generates electromagnetism or mass.
 
 The main external inputs still include:
 
@@ -90,9 +103,10 @@ The main external inputs still include:
 - spacetime dimension and metric signature;
 - Maxwell/QED kinetic dynamics;
 - quantum commutation structure;
-- numerical electromagnetic coupling.
+- numerical electromagnetic coupling;
+- physical mass-generation mechanism.
 
-REL-13 and REL-14 sharpen the distinction: the need for a transport/connection rule is generic across tested representation classes, while the choice of physical group remains an independent question.
+REL-13 and REL-14 sharpen the distinction: the need for a transport/connection rule is generic across tested representation classes, while the choice of physical group remains an independent question. REL-15 similarly separates generic memory from the specific retained dynamical structure that produces inertia in mechanics.
 
 ## Required test discipline
 
@@ -115,3 +129,4 @@ Freeze definitions before comparison. Record failures rather than repairing the 
 - REL-12 — U(1) external-input audit: completed.
 - REL-13 — representation-agnostic connection pressure: completed at numerical structural level.
 - REL-14 — gauge-group selection pressure: completed; U(1) not selected by minimal covariance/transport requirements.
+- REL-15 — memory/inertia/action: completed; inertia requires retained dynamical state, generic memory does not derive mass.
