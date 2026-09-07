@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 2026-09-07 — LIGHT v0.5
+
+- Добавлен `LIGHT_PROPERTIES.md`: полная карта физических свойств света/электромагнитного излучения и их relation-first mapping.
+- Добавлен `FULL_LIGHT_RUN.md`: полный проход по кинематике, полям, энергии, импульсу, поляризации, причинности, взаимодействию, границам, квантованию, интерференции и информации.
+- Добавлен `experiments/REL-05_dispersion_energy_momentum.py`: дисперсионный тест `omega(k)` и связь с безмассовой кинематикой.
+- Добавлен `experiments/REL-06_polarization_helicity.md`: поперечность, поляризация и helicity.
+- Добавлен `experiments/REL-07_stress_energy.md`: энергия, импульс и Maxwell stress layer.
+- Добавлен `experiments/REL-08_boundaries.md`: reflection/refraction/diffraction boundary layer.
+- Добавлен `experiments/REL-09_matter_interaction.md`: coupling, absorption, emission and scattering.
+- Добавлен `experiments/REL-10_quantum_modes.md`: quantum modes, occupation and photon layer.
+- Добавлен `experiments/REL-11_interference_coherence_information.md`: interference, coherence and information layer.
+- REL-05 подтверждён численно на длинных волнах; дискретизационная дисперсия появляется у Nyquist и не должна интерпретироваться как физическое свойство фотона.
+- Добавлена строгая граница: часть слоёв пока архитектурно совместима, но не выведена из Ω аксиом.
+
 ## 2026-09-07 — LIGHT v0.4
 
 - Добавлен `experiments/REL-03_gauge_relation_test.py`: дискретный U(1) gauge/connection тест.
@@ -36,4 +50,4 @@
 - Добавлен экспериментальный план E0–E5.
 - Зафиксировано правило разделения факта, модели, гипотезы и теста.
 
-Следующий этап: проверить, можно ли вывести общий transformation/connection/invariant паттерн без ручного ввода U(1) (`REL-04`).
+Следующий этап: полный проход по физическим свойствам света и их relation-first проверке.
