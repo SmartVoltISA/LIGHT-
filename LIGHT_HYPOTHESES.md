@@ -44,13 +44,29 @@ A relation-first architecture can retain transverse vector field structure and r
 
 Status: **supported at the tested numerical layer by REL-02E**. The result is computational and supportive, not a derivation of electromagnetism from relations.
 
+### H5d — Gauge/connection compatibility
+A relation-first architecture can represent local state conventions, a U(1) link connection, covariant local comparison, accumulated curvature, and gauge-invariant energy without changing the relation-first ordering.
+
+Status: **supported at the tested discrete U(1) layer by REL-03**. This is compatibility evidence, not a derivation of U(1) from Ω.
+
+## Important boundary
+
+REL-03 exposes the next hard question. The U(1) group is currently an input inherited from established QED, not derived by Ω. Therefore the result must not be described as deriving electromagnetism from relations.
+
+The remaining risky question is whether the abstract pattern
+
+`local state → transformation law → connection → accumulated relation → invariant`
+
+can be selected from the same frozen Ω architecture without inserting the electromagnetic group by hand.
+
 ## Required test discipline
 
-Apply the same schema to LIGHT and independent systems. Freeze definitions before comparing results. Record failures rather than repairing the model after seeing the result.
+Apply the same schema to LIGHT and independent systems. Freeze definitions before comparing results. Record failures rather than repairing the model after seeing the result. Distinguish compatibility tests from derivations.
 
 ## Current experimental chain
 
 - REL-01 — scalar relation operator / propagation: completed.
 - REL-01E — scalar relation + energy balance: completed.
 - REL-02E — vector Maxwell relation + energy balance: completed at the tested numerical layer.
-- REL-03 — gauge/connection layer: next.
+- REL-03 — discrete U(1) gauge/connection invariance: completed at the tested numerical layer.
+- REL-04 — test whether the transformation/connection/invariant pattern can be derived without importing U(1): next.
