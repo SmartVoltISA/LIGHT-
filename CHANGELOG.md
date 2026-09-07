@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-09-07 — LIGHT v0.4
+
+- Добавлен `experiments/REL-03_gauge_relation_test.py`: дискретный U(1) gauge/connection тест.
+- Добавлен `experiments/REL-03.md`: зафиксированы connection, covariant relation, curvature и gauge-invariant energy.
+- Зафиксировано H5d: relation-first архитектура совместима с дискретным U(1) gauge/connection слоем на проверенном численном уровне.
+- Зафиксирована строгая граница: U(1) пока является входом из установленной QED, а не результатом вывода Ω.
+- Следующий риск: проверить, можно ли получить общий паттерн `state → transformation → connection → accumulated relation → invariant` без ручного ввода электромагнитной U(1).
+
 ## 2026-09-07 — LIGHT v0.3
 
 - Добавлен `ENERGY_RELATION.md`: энергия включена в relation-first проверку как отдельный количественный критерий.
@@ -28,4 +36,4 @@
 - Добавлен экспериментальный план E0–E5.
 - Зафиксировано правило разделения факта, модели, гипотезы и теста.
 
-Следующий этап: проверить, выдерживает ли замороженная relation-архитектура gauge/connection слой без изменения базовых определений (`REL-03`).
+Следующий этап: проверить, можно ли вывести общий transformation/connection/invariant паттерн без ручного ввода U(1) (`REL-04`).
