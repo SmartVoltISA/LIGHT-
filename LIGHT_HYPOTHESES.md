@@ -82,6 +82,11 @@ REL-17 tests two trajectories with identical endpoints. An endpoint-only value f
 
 Status: **negative boundary confirmed. Generic VALUE does not determine physical dynamics; a physical variational law requires additional structure and a specified stationarity/selection condition.**
 
+### H5n — Minimum structure for dynamics
+REL-18 tests a local path functional `S[x]=∫L(x,xdot,t)dt` with stationary selection. In the time-translation-invariant case, the numerical energy drift is at machine precision. Adding explicit time dependence while retaining locality and stationarity produces a nonzero energy change obeying `dE/dt=−∂L/∂t` to numerical precision.
+
+Status: **sufficiency result with a negative derivation boundary. Local path functional + stationarity is sufficient to generate local dynamics in the tested class; time-translation symmetry supplies the conserved energy-like quantity. The physical Lagrangian form, mass parameter, time parameter, and stationary-action principle are not derived from Ω primitives.**
+
 ## Important boundary
 
 The current evidence supports a powerful architectural mapping, but does not establish that Ω uniquely generates electromagnetism, mass, or physical dynamics.
@@ -96,7 +101,7 @@ The main external inputs still include:
 - physical mass-generation mechanism;
 - physical action/variational structure.
 
-REL-13 and REL-14 show that connection pressure is broader than U(1), while gauge-group choice remains independent. REL-15 separates generic memory from inertial state and mass. REL-16 and REL-17 now separate abstract VALUE/CHOICE from the additional path-dependent structure required for physical dynamics.
+REL-13 and REL-14 show that connection pressure is broader than U(1), while gauge-group choice remains independent. REL-15 separates generic memory from inertial state and mass. REL-16 and REL-17 separate abstract VALUE/CHOICE from the additional path-dependent structure required for physical dynamics. REL-18 further separates the local variational layer from time-translation symmetry and conservation.
 
 ## Required test discipline
 
@@ -122,3 +127,4 @@ Freeze definitions before comparison. Record failures rather than repairing the 
 - REL-15 — memory/inertia/action: completed; inertia requires retained dynamical state, generic memory does not derive mass.
 - REL-16 — value/path selection: completed; value orders admissible paths but does not derive physical action.
 - REL-17 — path/dynamics separation: completed; endpoint value does not determine physical trajectory.
+- REL-18 — minimum structure for dynamics: completed; local variational structure yields dynamics in the tested class, while time-translation symmetry yields energy conservation.
